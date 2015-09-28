@@ -1,0 +1,40 @@
+<div>
+    <h2 class="page-title">Candidates</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Middle Initial</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Expected Salary</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="candidate in vm.candidates | orderBy: 'first_name'">
+                <td>
+                    <div>{{candidate.first_name | uppercase}}</div>
+                    <div><input type="text" class="form-control" /></div>
+                </td>
+                <td>
+                    <div>{{candidate.middle_initial | uppercase}}</div>
+                    <div><input type="text" class="form-control" /></div>
+                </td>
+                <td>
+                    <div>{{candidate.last_name | uppercase}}</div>
+                    <div><input type="text" class="form-control" /></div>
+                </td>
+                <td>
+                    <div>{{candidate.email}}</div>
+                    <div><input type="text" class="form-control" /></div>
+                </td>
+                <td>
+                    <div>{{candidate.expected_salary | currency}}</div>
+                    <div><input type="text" class="form-control" /></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
