@@ -1,7 +1,7 @@
 # ControllerASAngularJS
 Implementation of AngularJS syntax for “Controller As” and the “vm” Variable
 
-1. Use the controllerAs syntax over the classic controller with $scope syntax.
+1: Use the controllerAs syntax over the classic controller with $scope syntax.
 
 Why?: Controllers are constructed, "newed" up, and provide a single new instance, and the controllerAs syntax is closer to that of a JavaScript constructor than the classic $scope syntax.
 
@@ -9,7 +9,7 @@ Why?: It promotes the use of binding to a "dotted" object in the View (e.g. cust
 
 Why?: Helps avoid using $parent calls in Views with nested controllers.
 
-2. The controllerAs syntax uses this inside controllers which gets bound to $scope
+2: The controllerAs syntax uses this inside controllers which gets bound to $scope
 
 Why?: controllerAs is syntactic sugar over $scope. You can still bind to the View and still access $scope methods.
 
