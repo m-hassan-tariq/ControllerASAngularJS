@@ -15,6 +15,6 @@ Why?: controllerAs is syntactic sugar over $scope. You can still bind to the Vie
 
 Why?: Helps avoid the temptation of using $scope methods inside a controller when it may otherwise be better to avoid them or move the method to a factory, and reference them from the controller. Consider using $scope in a controller only when needed. For example when publishing and subscribing events using $emit, $broadcast, or $on.
 
-3. Use a capture variable for this when using the controllerAs syntax. Choose a consistent variable name such as vm, which stands for ViewModel.
+3: Use a capture variable for this when using the controllerAs syntax. Choose a consistent variable name such as vm, which stands for ViewModel.
 
 Why?: The this keyword is contextual and when used within a function inside a controller may change its context. Capturing the context of this avoids encountering this problem.
