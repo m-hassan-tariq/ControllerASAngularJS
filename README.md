@@ -1,4 +1,4 @@
-# ControllerASAngularJS
+# Controller AS syntax For AngularJS
 Implementation of AngularJS syntax for “Controller As” and the “vm” Variable
 
 1: Use the controllerAs syntax over the classic controller with $scope syntax.
